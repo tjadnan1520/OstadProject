@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Online Store</h1>
+        <div class="cart-info">
+            <span id="cart-count">0</span> items in your cart | 
+            <button id="view-cart-btn">View Cart</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="product-list">
+            <!-- Products will be dynamically loaded here -->
+        </section>
+    </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <div id="total">
+                <strong>Total: $<span id="total-price">0</span></strong>
+            </div>
+            <button id="clear-cart-btn">Clear Cart</button>
+            <button id="checkout-btn">Checkout</button>
+            <button id="close-cart-btn">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
